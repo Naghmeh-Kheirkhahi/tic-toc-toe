@@ -1,0 +1,194 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/6700fb65a7.js" crossorigin="anonymous"></script>
+        <title>Tic Tac Toe Game</title>
+    </head>
+
+    <body>
+        <div class="main-class col-7 display-flex align-item-center text-align margin-auto">
+            <div class="col-6">
+                <div style="display: flex;">
+                    <div style="margin-left: 35%;">
+                        <button class="button-xo-class" id="btn1" onclick="buttonClick(1 , event)"></button>
+                        <button class="button-xo-class" id="btn2" onclick="buttonClick(2 , event)"></button>
+                        <button class="button-xo-class" id="btn3" onclick="buttonClick(3 , event)"></button>
+                    </div>
+                    <div>
+                        <button class="button-xo-class" id="btn4" onclick="buttonClick(4 , event)"></button>
+                        <button class="button-xo-class" id="btn5" onclick="buttonClick(5 , event)"></button>
+                        <button class="button-xo-class" id="btn6" onclick="buttonClick(6 , event)"></button>
+                    </div>
+                    <div style="margin-right: 5%;">
+                        <button class="button-xo-class" id="btn7" onclick="buttonClick(7 , event)"></button>
+                        <button class="button-xo-class" id="btn8" onclick="buttonClick(8 , event)"></button>
+                        <button class="button-xo-class" id="btn9" onclick="buttonClick(9 , event)"></button>
+                    </div>
+                </div>
+
+                <button class="button-replay-class" onclick="replayFunction()">Replay</button>
+            </div>
+
+            <div class="title-class col-5">
+                <img src="/Arrow.png" alt="flash" style="padding-bottom: 10px;">
+                <p>TIC TAC TOE</p>
+                <p class="javascript-class">IN JAVASCRIPT</p>
+            </div>
+        </div>
+        <!-- we use onchange when we want to make change in html like choose an option. we use onclick when we want to click on a button.  -->
+    </body>
+
+    <style>
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        html {
+            scroll-behavior: smooth;
+        }
+    
+        .text-center {
+            text-align: center;
+        }
+    
+        .display-flex {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        .align-item-center {
+            align-items: center;
+        }
+    
+        .space-between {
+            justify-content: space-between;
+        }
+    
+        .space-around {
+            justify-content: space-around;
+        }
+    
+        .flex-column {
+            flex-direction: column;
+        }
+    
+        .margin-auto {
+            margin: auto;
+        }
+
+        .main-class {
+            border: 2px solid rgb(37, 105, 148);
+            border-radius: 7px;
+            background-color: rgb(91, 165, 210);
+            margin-top: 10%;
+            padding: 20px;
+        }
+
+        .title-class {
+            font-size: 50px; 
+            font-weight: bolder;
+            color: white;
+            line-height: 60px;
+            padding: 20px;
+            margin-top: 5%;
+            margin-right: 5%;
+        }
+
+        .javascript-class {
+            font-size: 40px; 
+            color: rgb(91, 165, 210);
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 7px;
+            background-color: white;
+            padding: 0 5px 0 5px;
+        }
+
+        .button-xo-class {
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: white;
+            color: rgb(91, 165, 210);
+            height: 80px;
+            width: 80px;
+            font-size: 40px;
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .button-xo-class:hover {
+            cursor: grab;
+            border: 1px solid black;
+            background-color: black;
+            color: rgb(255, 213, 0);
+        }
+
+        .button-replay-class {
+            border: 1px solid rgb(255, 98, 0);
+            border-radius: 5px;
+            background-color: rgb(255, 115, 28);
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            margin-top: 5%;
+            margin-left: 53%;
+        }
+
+        .button-replay-class:hover {
+            cursor: pointer;
+        }
+
+
+        .col-1 {
+            width: 8.33%;
+        }
+    
+        .col-2 {
+            width: 16.66%;
+        }
+    
+        .col-3 {
+            width: 25%;
+        }
+    
+        .col-4 {
+            width: 33.33%;
+        }
+    
+        .col-5 {
+            width: 41.66%;
+        }
+    
+        .col-6 {
+            width: 50%;
+        }
+    
+        .col-7 {
+            width: 58.33%;
+        }
+    
+        .col-8 {
+            width: 66.66%;
+        }
+    
+        .col-9 {
+            width: 75%;
+        }
+    
+        .col-10 {
+            width: 83.33%;
+        }
+    
+        .col-11 {
+            width: 91.66%;
+        }
+    
+        .col-12 {
+            width: 100%;
+        }
+    
+    </style>
+    <script src="script.js"></script>
+</html>
